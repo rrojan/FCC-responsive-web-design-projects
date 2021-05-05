@@ -1,4 +1,4 @@
-# FCC-responsive-web-design-projects
+# FCC Responsive Web Design Certification projects
 
 Final projects for my freeCodeCamp Responsive Web Design Certification
 
