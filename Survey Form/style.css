@@ -1,0 +1,105 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.6);
+    /* bootstrap btn-success color */
+    --color-green: #5cb85c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#title {
+    margin-bottom: 0.5em;
+}
+
+#description {
+    text-shadow: 2px 2px 2px #000;
+}
+
+#form-container {
+    width: 50%;
+    background-color: var(--color-darkblue-alpha);
+    padding: 2.4em;
+}
+
+@media (max-width: 720px) {
+    #form-container {
+        width: 80%;
+    }
+}
+
+.form-element {
+    margin: 10px 0px 30px 0px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    margin-top: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+input[type="checkbox"], input[type="radio"] {
+    margin: 3px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+#textarea {
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    width: 80%
+}
+@media (max-width: 720px) {
+    #textarea {
+        width: 90%;
+    }
+}
+
+#submit {
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 0.2rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    background-color: var(--color-darkblue);
+    color: white;
+    cursor: pointer;
+}
+
+#submit:hover {
+    animation-name: btn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    100% {
+        background-color: var(--color-green);
+        color: white;
+    }
+}
